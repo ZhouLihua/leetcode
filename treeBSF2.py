@@ -4,7 +4,11 @@
 Search a binary tree broad first
 """
 
-from Queue import Queue
+# Queue module name changed from Queue to queue
+try:
+    from Queue import Queue
+except ImportError:
+    from queue import Queue
 
 
 class Node(object):
